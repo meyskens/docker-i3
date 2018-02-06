@@ -2,7 +2,7 @@ FROM debian:stretch
 
 RUN apt-get update && apt-get -y upgrade
 # Set up i3
-RUN apt-get -y install i3 rofi feh compton xinput i3status i3blocks
+RUN apt-get -y install i3 rofi feh compton xinput i3status i3blocks x11-xserver-utils
 # Add my stuff
 RUN apt-get install -y curl bash sudo gnome-terminal lxterminal vim
 # Add Docker, because docker
